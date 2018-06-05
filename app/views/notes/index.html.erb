@@ -1,2 +1,14 @@
 <h1> i love hoseok </h1>
 <img src="https://mail.google.com/mail/u/0/?ui=2&ik=9a5535e95b&view=fimg&th=163b165ba93e6c4e&attid=0.1&disp=emb&realattid=163b165886263a571e51&attbid=ANGjdJ895tqQB8GWJujsfhahjC0ZZAGQBOSjBice6QhcrTjYaa7N5DlbQVoRbMC5O01Ko93luD4DO3tVfxxiLf-rh9o19FwD96iRIZy5-UryXIteZJGe5kuNl5779hE&sz=s0-l75-ft&ats=1527689632553&rm=163b165ba93e6c4e&zw&atsh=1">
+<% @notes.each do |notes| %>
+  <li>
+    <input type="checkbox" name=""/>
+   <a href="/notes/show/<%= notes.id %>"><%= notes.description %></a>
+    <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+  </li>
+<% end %>
+</ul>
+
+<div id="new-todo-block">
+<a href="/todo/new" class="button add-new-todo-button" id="add-new-todo-button">Add a todo</a>
+</div>

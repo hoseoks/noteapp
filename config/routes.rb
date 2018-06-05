@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'notes/index', to: 'notes#index'
+  root to: 'notes#index'
   get 'notes/new', to: 'notes#new'
   get 'notes/create', to: 'notes#create'
   get 'notes/edit/:id', to: 'notes#edit'
