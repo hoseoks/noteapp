@@ -1,0 +1,10 @@
+<h1>edit</h1>
+ <form action="/notes/update/<%= @notes.id %>">
+    <input name="notes" type="text" value="<%= @notes.notes %>">
+    <input name="date" type="number" value="<%= @notes.date %>">
+    <input name="unit" type="text" value="<%= @notes.unit %>">
+    <input type="submit" value="EDIT">
+
+  </form>
+  <br>
+    <a href="/" class="simple-link">BACK TO LIST</a>

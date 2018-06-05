@@ -1,10 +1,10 @@
-<h1>Workshop Todo List </h1>
-  
-<div class="card">
- <input type="checkbox" name=""/>
- <h2>Make the curriculum</h2>
- <span class="pomodoro-estimate large-pomodoro-estimate">4 Pomodoros</span>
- <a href="#" class="button" id="edit-todo-button">Edit</a>
-<a href="/todo/destroy/<%= @todo.id %>" class="button delete-todo-button">Delete</a>
- <a href="index" class="simple-link">Go back...</a>
-</div>
+<h1>show</h1>
+
+<h3><%= params[:id] %></h3>
+<h2><%= @notes.notes %></h2>
+<h2><%= @notes.unit %></h2>
+<h2><%= @notes.date %></h2>
+
+<a href="/notes/edit/<%= @notes.id %>" >Edit</a>
+<a href="/notes/destroy/<%= @notes.id %>" >Delete</a>
+<a href="/" >BACK TO LIST</a>
