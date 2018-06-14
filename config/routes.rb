@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get 'notes/edit/:id', to: 'notes#edit'
   get 'notes/update/:id', to: 'notes#update'
   get 'notes/destroy/:id', to: 'notes#destroy'
-  get 'notes/show:/id', to: 'notes#show'
+  get 'notes/show/:id', to: 'notes#show'
 end

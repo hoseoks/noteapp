@@ -1,10 +1,17 @@
-<h1>show</h1>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+  
+  <div class="indexx">
+<h1 class="headtext">NOTE NO. <%= params[:id] %></h1>
 
-<h3><%= params[:id] %></h3>
-<h2><%= @notes.notes %></h2>
-<h2><%= @notes.unit %></h2>
-<h2><%= @notes.date %></h2>
 
+
+<p class="accnote1"><%= @notes.notes %></p>
+<p class="accnote1">this is under <b>unit #<%= @notes.unit %></b>
+</div>
+
+<div class="make">
 <a href="/notes/edit/<%= @notes.id %>" >Edit</a>
-<a href="/notes/destroy/<%= @notes.id %>" >Delete</a>
-<a href="/" >BACK TO LIST</a>
+<br>
+<a href="/notes/destroy/<%= @notes.id %>" >Delete</a> <br>
+<a href="/" >BACK TO LIST</a></div>

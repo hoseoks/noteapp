@@ -1,10 +1,15 @@
-<h1>edit</h1>
- <form action="/notes/update/<%= @notes.id %>">
-    <input name="notes" type="text" value="<%= @notes.notes %>">
-    <input name="date" type="number" value="<%= @notes.date %>">
-    <input name="unit" type="text" value="<%= @notes.unit %>">
-    <input type="submit" value="EDIT">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+<div class="make">
+    <h1 class="headtext">EDIT YOUR NOTES</h1>
 
-  </form>
-  <br>
-    <a href="/" class="simple-link">BACK TO LIST</a>
+ <form action="/notes/update/<%= @notes.id %>">
+    <textarea name="notes" type="text"><%= @notes.notes %></textarea><br>
+    
+    <input class="text-input" id="new-pomodoro-estimate" name="unit" type="number"value="<%= @notes.unit %>">
+    <br>
+    <input type="submit" class="anew2" value="update your notes">
+<br><br>
+  <a href="/"><button class="anew2">go back</button></a>
+  </form> 
+  </div>

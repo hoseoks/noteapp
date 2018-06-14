@@ -1,19 +1,33 @@
-<h1>index</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">
 
-     
+<div class="sidebar">
+    <div class="logo"><img src="https://vectr.com/ultjhs/a6B1rsGj4h.svg?width=360&height=360&select=a6B1rsGj4hpage0" /></div>
+         <p id="sidep"> an app for you to add notes for everything, from ap world to just notes on a new language. use the power of technology to create, edit, delete, and view your notes on your phone.</p>
+         <hr>
+         <ul>
+            <li><a id="sidea" href="/"> home </a></li>
+            <li><a id="sidea" href="/notes/new"> add a note </a></li>
+            <li> <a id="sidea" href="https://www.google.com/"> info search </a></li>
+         </ul>
+         <hr>
+         <a href="/notes/new"><button class="anew">
+  ADD TO LIST
+  </button></a>
+      </div>
+<div class="nav">
+         <a href="#">home </a>
+         <a  href="#">weather </a>
+         <a  href="#">sports </a>
+      </div>
+      <h1> noteslate </h1>
    <% @notess.each do |notes| %>
-    <div>
-     <h3>id</h3>
-        <p><%= notes.id %></p>
-     <h3>description</h3>
-        <a href="/notes/show/<%= notes.id %>"><%= notes.unit %></a>
-     <h3>item</h3>
-        <p><%= notes.notes %></p>
+    <div class="indexx">
+     <a href="/notes/show/<%= notes.id %>"><h3 id="headr">NOTE NO. <%= notes.id %> </h3></a>
+        <p class="accnote"><b><%= notes.notes %></b></p>
+        <p class="accnote">from unit <b><%= notes.unit %></b></p>
 
-    </div>
-    <hr>
+    </div> 
+    <hr class="navv">
   <% end %>
- 
-  <div>
-  <a href="/notes/new">ADD TO LIST</a>
-  </div>
+<a href="/notes/new"> add to list </a>

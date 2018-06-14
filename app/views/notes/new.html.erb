@@ -1,6 +1,10 @@
-<h2>Add a new todo...</h2>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+<h2 class="headtext">ADD A NEW NOTE</h2>
 <form action="/notes/create">
-  <input class="text-input" id="new-todo-description" name="description" type="text" placeholder="Add a new todo...">
-  <input class="text-input" id="new-pomodoro-estimate" name="pomodoro_estimate" type="number" placeholder="Pomodoro estimate...">
-  <input class="button" id="add-new-todo-button" type="submit" value="Add todo">
+  <textarea class="text-input" id="new-todo-description" name="notes" type="text" placeholder="Add note..."> </textarea><br>
+  <input class="text-input" id="new-pomodoro-estimate" name="unit" type="number" placeholder="unit"> <br>
+  <input class="anew2" id="add-new-todo-button" type="submit" value="add your note">
+  <br><br>
+  <a href="/"><button class="anew2">go back</button></a>
 </form>
